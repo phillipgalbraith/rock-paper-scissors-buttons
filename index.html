@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+   
+    <title>Google</title>
+    
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Arial">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link rel="shortcut icon" type="image/png" href="/images/tablogo.png"/>
+
+
+
+    <style>
+        body {
+            display:flex;
+            flex-flow: column nowrap;
+            font-family: Arial, serif;
+            font-size: 13px;
+        }
+
+        .container {    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 35px;
+        }
+
+        .left-div {
+            height: 30px;
+        }
+
+        .right-div {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+
+        .middle {
+            padding-top: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;   
+         }
+
+        .about {
+            display: inline-block;
+            line-height: 24px;
+            margin-right: 0px;
+            margin-left: 11px;
+            
+            text-decoration: none;
+        }
+
+        .store {
+            display: inline-block;
+            line-height: 24px;
+            padding: 5px 5px 5px 0px;
+            margin-right: 5px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        
+        .gmail {
+            padding-top: 8px;
+            font-size: 11px;
+            width: 40px;
+            text-decoration: none;
+        }
+
+        .images {
+            padding-top: 8px;
+            width: 60px;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        #apps-icon {
+            padding: 10px 15px 0px 0px;
+            height: 24px;
+        }
+  
+        .sign-in {
+           padding:  5px 10px 0px 0px;
+            height: 30px;
+            width: flex(minmax(60px 80px));
+        }
+
+
+        .sign-in-button {
+            background-color:rgb(72, 127, 245);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 13px;            
+            border-style: solid;
+            padding: 7px 12px 7px 12px;
+            border-radius: 9%;
+            border-color: rgb(89, 140, 252);  
+        }
+      
+ 
+.round-ends {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 145px;
+}
+
+.round-left {
+    display:inline-block;
+            background-color: white;
+            border-style: solid;
+            border-color:rgb(184, 184, 184);
+            border-width: 1px;
+            border-radius: 50%;
+            width: 40px;
+            height:40px;  
+            margin: 0px 74vw 0px 0px; 
+}
+
+@media only screen and (min-width: 600px ) {
+    .round-left {
+
+        margin: 0px 450px 0px 0px; 
+}
+    }
+
+
+.round-right {
+    display:inline-block;
+            background-color: white;
+            border-style: solid;
+            border-color:rgb(184, 184, 184);
+            border-width: 1px;
+            border-radius: 50%;
+            width: 40px;
+            height:40px;  
+}
+.band {
+            display:inline-block;
+            background-color: white;
+            position: absolute;
+            top: 130px;
+            border-top-style:solid;
+            border-bottom-style: solid;
+            border-color:rgb(184, 184, 184);
+            border-width: 1px;
+            width: 83vw;
+            height:40px;  
+            margin:15px 0px 0px 0px; 
+            
+        }
+
+    @media only screen and (min-width: 600px ) {
+        .band {
+        width: 500px; 
+        }
+     }
+
+    .search-container {
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 35px;
+            width: 85%;
+            z-index: 5;
+            padding-left: 5%;
+        }
+
+        .search-icon-box {
+            display: inline-block;
+            position: relative;
+        }
+
+        #search-icon {
+            color: rgb(163, 163, 163);
+            font-size: 17px;
+            position: relative;
+            content: "";
+            padding: 10px 0px 0px 8px;
+            z-index: 9;     
+        }  
+        .mic-box {
+            justify-items:start;
+            display: inline-block;
+            position: absolute;
+            z-index: 10;
+
+        }
+
+        .mic {
+           position: relative;
+           padding: 8px 5px 0px 0px;
+        }  
+        
+        @media only screen and (min-width: 600px ) {
+        .search-container {
+        width: 580px; 
+        justify-content: flex-start;
+        
+        padding-left: 8vw;
+        }
+    }
+
+        form {
+            padding: 9px 0px 0px 20px;
+        }
+
+        input, input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    outline-width: 0px;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: auto;
+    }
+
+    .gray-buttons {    
+            display: flex;
+            flex-flow: row nowrap;
+            padding-top: 20px;
+            justify-content: center;
+}
+
+    .google-search {
+            background-color:rgb(235, 235, 235);
+            color: rgb(139, 139, 139);
+            font-family: Arial, sans-serif;
+            font-size: 13px;            
+            border-style: solid;
+            padding: 7px 12px 7px 12px;
+            margin-right: 10px;
+            border-radius: 9%;
+            border-color: rgb(235, 235, 235);
+        }
+
+        .feeling-lucky {
+            background-color:rgb(235, 235, 235);
+            color: rgb(139, 139, 139); 
+            font-family: Arial, sans-serif;
+            font-size: 13px;            
+            border-style: solid;
+            padding: 7px 12px 7px 12px;
+            border-radius: 9%;
+            border-color: rgb(235, 235, 235);
+        }
+
+
+/* Tooltip text 
+
+  
+.tool-tip {
+            display:inline-block;
+            position: relative;
+        }
+
+.tool-tip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: rgb(124, 0, 0);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  
+
+  /* Position the tooltip text - see examples below!
+  position: absolute;
+  z-index: 1;
+  bottom: -16px;
+  right: 105%;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+ */
+.bottom-links {
+            display: inline-block;
+            position: absolute;
+            bottom: 0px;
+            right:2px;
+}
+
+ .container2 {    
+            display: flex;
+            color: gray;
+            flex-flow: row nowrap;
+            width: 100vw;
+            justify-content: space-between;
+            height: 35px;
+            background-color: rgb(236, 236, 236);
+            border-top: 2px;
+            border-color: gray;
+        }
+        @media only screen and (max-width:600px) {
+    .container2 {
+        flex-flow: column nowrap;
+        justify-items: center;
+        align-items: center;
+        height: 70px;
+        }
+    }
+
+        .left-div2 {
+            height: 30px;
+            padding-bottom: 5px;
+        }
+
+        .right-div2 {
+            height: 30px;
+            padding-bottom: 5px;
+        }
+        
+  
+
+        .advertising {
+            display: inline-block;
+            height: 30px;
+            padding: 0px 15px 0px 2px;
+        }
+
+        .business {
+            display: inline-block;
+            height: 30px;
+            padding-right: 15px;
+        }
+
+        .how-search-works {
+            display: inline-block;
+            height: 30px;
+        }
+        
+        .privacy {
+            display: inline-block;
+            height: 30px;
+            padding-right: 15px;
+        }
+
+        .terms {
+            display: inline-block;
+            height: 30px;
+            padding-right: 15px;
+        }
+
+        .settings {
+            display: inline-block;
+            height: 30px;
+        }
+
+    </style>
+    </head>
+<body>
+<header> 
+    <nav> 
+        <div class="container">
+       
+            <div class="left-div">
+                <a href="" class="about">About</a>
+                <a href="" class="store">Store</a>
+            </div>
+       
+            
+            <div class="right-div">
+                <a href="" class="gmail">Gmail</a>
+                <a href="" class="images">Images</a>
+                <div class="apps-icon"> <i id="apps-icon" class="material-icons">apps</i></div>
+                <div class="sign-in"><a href="" class="sign-in"><button type="button" class="sign-in-button">Sign in</button></a></div>
+            </div>
+            
+   </div>
+    </nav>       
+</header>
+
+<main>
+
+   <div class="middle"> 
+       
+        <img width="252" height="83" class="logo" src="images/google.png" alt="Google Logo">
+        
+        <div class="round-ends">
+            <div class="round-left"><i id="search-icon" class="material-icons">search</i></div> 
+            <div class="round-right">  <div class="mic-box"> <img class="mic" width="13" height="18" src="images/mic.png" alt="mic"></div></div>    
+        </div>
+
+        <div class="band"></div>
+        
+        <div class="search-container"> 
+            <form>
+            <input name="search" class="search" type="text" size="40">
+            </form>
+            
+          
+            <!-- <span class="tooltiptext">Search</span> -->
+         </div>
+        
+</div>
+<div class="gray-buttons">    
+    <button type="button" class="google-search">Google Search</button>
+    <button type="button" class="feeling-lucky">I'm Feeling Lucky</button>
+    </div>
+
+
+</main>
+<footer>
+    <div class="bottom-links">
+        <div class="container2">
+       
+        <div class="left-div2">
+            <a href="" class="advertising">Advertising</a>
+            <a href="" class="business">Business</a>
+            <a href="" class="how-search-works">How Search works</a>
+        </div>
+
+        <div class="right-div2">
+            <a href="" class="privacy">Privacy</a>
+            <a href="" class="terms">Terms</a> 
+            <a href="" class="settings">Settings</a>   
+        </div>
+        </div>
+</div>
+</footer>
+</body>
+</html>
