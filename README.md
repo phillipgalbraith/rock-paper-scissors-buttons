@@ -1,15 +1,17 @@
-Google Homepage project
+Rock-Paper-Scissors project
 
 Breif Description
+I made a player vs cpu rock-paper-scissors game that keeps score.
 
-This is a Google Homepage  exercise assigned in The Odin Project.  I created it without copying any content directly from the original page.
+Fist Attemypt in Learning: comments of pseudocode
+
 
 Skills Demonstrated
+conditionals
+while loop
+comparisons
+functions
 
-HTML with CSS in Visual Studio Code
-flex-box layout
-media queries
-shortcut icons
-shapes created with CSS
+
 
 
